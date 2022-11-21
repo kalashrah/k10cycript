@@ -1,4 +1,4 @@
-@import org.k10
+
 (function(exports) {
 
 
@@ -53,7 +53,7 @@ return keys;
     vee = choose(objc_getClass("Jodel.JDLFeedCellVoteView"))
     for (i = 0; i <= vee.length; i++){ [vee[i] upvoteTap:YES]; }
     };
-	ch = function(o) { return choose(o); };
+	ch = function(o){ return [choose choose:objc_getClass(o)];};
 
 find_locations = function(views, sortbyy = true) {
 		return views.map(function(view) {
@@ -305,7 +305,7 @@ find_locations = function(views, sortbyy = true) {
 		return x; 
 	};
 
-	// 打印所有的成员变量名字
+	
 	MJIvarNames = function(obj, reg) {
 		if (!obj) throw new Error(missingParamStr);
 		var array = [];
